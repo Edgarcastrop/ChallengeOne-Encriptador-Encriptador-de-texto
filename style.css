@@ -1,0 +1,149 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+main{
+    display: inline-block;
+}
+header img{
+    margin: 10px 30px;
+}
+.textarea{
+    position: relative;
+    width: 300px;
+    top: 20px;
+    left: 65%;
+    margin: 0 0 60px 0 ;
+}
+.textarea textarea{
+    border: none;
+    font-size: 24px;
+    max-height: 900px;
+}
+.input:focus, input:hover{
+    border-style: none;
+    outline: none;
+    border: 0px 0px transparent;
+    box-shadow: 0 0 6px 0 #a3a3a3;
+}
+section{
+    position: absolute;
+    top: 20px;
+    right: 18px;
+    height: 600px;
+    width: 350px;
+    box-shadow: 0 0 10px 0 black;
+    border-radius: 30px;
+}
+.texto{
+    width: 95%;
+    height: auto;
+    position: absolute;
+    top: 20px;
+    left: 5px;
+    opacity: 0%;   
+    font-size: 22px;
+    font-style: italic;
+    word-wrap: break-word;
+}
+section img{
+    width: 250px;
+    position: absolute;
+    top: 150px;
+    left: 50px;
+    cursor:unset;
+}
+section div{
+    width: 250px;
+    position: absolute;
+    top: 400px;
+    left: 15%;
+    text-align: center;
+}
+section div p:first-child{
+    font-size: 25px;
+    font-weight: bold;
+}
+footer{
+    display: flex;
+    height: 80px;
+    width: 800px;
+    justify-content: right;
+    align-items: center;
+    position: absolute;
+}
+footer button{
+    height: 50px;
+    width: 200px;
+    border-radius: 10px;
+    margin-left: 20px;
+    border-color: transparent;
+    outline: none;
+    cursor: pointer;
+}
+#encriptar{
+    background-color: #0A3871;
+    color: white;
+    border-color: transparent;
+}
+footer p{
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    font-size: 10px;
+}
+footer img{
+    height: 12px;
+    position: absolute;
+    top: 0px;
+    left: 48%;
+}
+.deesencriptar{
+    color: #0A3871;
+    background-color: #a7a2a2;
+    border: 1.5px solid #0A3871;
+}
+.copybutton{
+    position: relative;
+    top: 90%;
+    left: 35%;
+    justify-content: center;
+    height: 30px;
+    width: 100px;
+    color: white;
+    background-color: #0A3871;
+    border-radius: 10px;
+    border: 0px solid transparent;
+    font-size: 15px;
+    cursor: pointer;
+}
+.copybutton:hover{
+    transform: scale(1.1);
+    background-color: #07254b;
+}
+.copybuttonpress{
+    position: relative;
+    top: 90%;
+    left: 35%;
+    justify-content: center;
+    height: 30px;
+    width: 100px;
+    color: white;
+    background-color: #13ca1c;
+    border-radius: 10px;
+    border: 0px solid transparent;
+    font-size: 15px;
+    cursor: pointer;
+}
+.copybuttonpress:hover{
+    transform: scale(1.1);
+    background-color: #4daf52;
+}
+section textarea{
+    resize: none;
+    border: none;
+}
+section textarea:focus, section textarea:hover{
+    border-style: none;
+    outline: none;
+    border: 0px 0px transparent;
+}
