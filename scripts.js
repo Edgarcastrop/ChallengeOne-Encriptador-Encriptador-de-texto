@@ -11,31 +11,12 @@ function encriptado(){
         return alert("Escribe solo letras minusculas");
     }
     else{
-        for (const ix of texto_separado) {
-            switch(ix){
-                case 'a':
-                   const a = texto_separado.indexOf(ix)
-                    texto_separado[a] = 'ai'
-                    break;
-                case 'e':
-                    const e = texto_separado.indexOf(ix)
-                    texto_separado[e] = 'enter'
-                    break;
-                case 'i':
-                    const i = texto_separado.indexOf(ix)
-                    texto_separado[i] = 'imes'
-                    break;
-                case 'o':
-                    const o = texto_separado.indexOf(ix)
-                    texto_separado[o] = 'ober'
-                    break;
-                case 'u':
-                    const u = texto_separado.indexOf(ix)
-                    texto_separado[u] = 'ufat'
-                    break;
-                }
-                texto = texto_separado.join('');
-            }
+        texto = texto.replaceAll('o','ober');
+        texto = texto.replaceAll('u','ufat');
+        texto = texto.replaceAll('i','imes');
+        texto = texto.replaceAll('e','enter');
+        texto = texto.replaceAll('a','ai');
+            
             document.getElementById("contenedor-texto").style.opacity = '0%';
             document.getElementById("img-lupa").style.opacity = '0%';
             const encriptacion = document.getElementById('encriptacion');
